@@ -1,0 +1,22 @@
+name: ⚡ K6 Load Test + MongoDB Save
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "40 6 * * *"
+
+jobs:
+  load-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 🧰 Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: echo something
+        run: echo "testing"
