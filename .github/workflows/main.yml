@@ -2,7 +2,7 @@ name: ⚡ K6 Load Test + MongoDB Save
 
 on:
   schedule:
-    - cron: "*/7 * * * *"
+    - cron: "*/5 * * * *"
 
 jobs:
   load-test:
