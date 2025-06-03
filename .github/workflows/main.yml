@@ -1,9 +1,8 @@
 name: ⚡ K6 Load Test + MongoDB Save
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/7 * * * *"
 
 jobs:
   load-test:
