@@ -1,9 +1,4 @@
-name: ⚡ K6 Load Test + MongoDB Save
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "*/6 * * * *"
 
 jobs:
   load-test:
